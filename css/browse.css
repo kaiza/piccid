@@ -1,0 +1,592 @@
+#imageList {
+    margin: 0px;
+    border-color: transparent;
+    background-color: transparent;
+}
+.image-list-element {
+    margin-top: 10px;
+    color: black !important;
+}
+#imageList > li {
+    padding: 5px !important;
+}
+table {
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0;
+}
+/* Image List*/
+.image-description, .points {
+    line-height: 0.8rem;
+    font-size: 1rem;
+}
+.image-description {
+    width: 100%;
+    display: block;
+    min-height: 70px;
+    padding-bottom: 7px;
+    line-height: 1.1rem;
+}
+.image-description img {
+    float: left;
+    width: 70px;
+    height: 70px;
+}
+.image-description > div {
+    float: left;
+    margin-left: 10px;
+}
+.image-description h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: .9rem;
+    color: black !important;
+}
+.image-description p {
+    font-size: .8rem;
+    margin: 0;
+}
+.image-description .created {
+    font-size: .7rem;
+    margin-top: 2px;
+}
+.points {
+    clear: both;
+    display: block;
+    border-radius: 2px;
+    font-size: 0.6rem;
+}
+.border-shading {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+/* TODO platform specific colours */
+.km-ios .points {
+    background-color: #f1f1f1;
+}
+.points table {
+    width: 100%;
+}
+.votes, .tags {
+    line-height: 1rem;
+    padding-bottom: 3px;
+}
+.votes {
+    padding-left: 2px; /* compensate for padding in tags */
+}
+.user-info {
+    text-align: right;
+    padding-right: 5px;
+    height: 20px;
+}
+.tag {
+    margin: 1px;
+    margin-top: 10px;
+    font-size: 0.7rem;
+    background-color: #fff;
+    padding: 2px 5px 2px 5px;
+    border-radius: 12px;
+                
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.avatar {
+    margin: 2px;
+    width: 32px;
+}
+.header {
+    font-size: 0.8rem;
+    padding: 5px;
+}
+.light-shade {
+    background-color: #f1f1f1;
+}
+.dark-shade {
+    background-color: #dedede;
+}
+.header span {
+    float: left;
+    margin: 0 5px 0 5px;
+}
+.header table {
+    font-weight: normal;
+    width: 100%;
+}
+.voteUp
+{
+    background: url(images/like.png) no-repeat center center;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin-top: 1px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+    	.voteUp {
+    		background: url(images/like@2x.png) no-repeat center center;
+            -webkit-background-size: 16px 16px;
+            background-size: 16px 16px;
+		}
+}
+            
+.voteDown
+{
+    background: url(images/dislike.png) no-repeat center center;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin-top: 1px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+    	.voteDown {
+    		background: url(images/dislike@2x.png) no-repeat center center;
+            -webkit-background-size: 16px 16px;
+            background-size: 16px 16px;
+		}
+}
+            
+.logo-image {
+    background: url(images/AppLogo.png) no-repeat center center;
+    display: block;
+    height: 71px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+    	.logo-image {
+    		background: url(images/AppLogo@2x.png) no-repeat center center;
+            -webkit-background-size: 128px 71px;
+            background-size: 128px 71px;
+		}
+}
+.image-info-all {
+    padding: 0.5em 0.7em;
+    clear: both;
+}
+.image-info-details {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.image-info-description {
+    font-size: 0.7em;
+}
+.item-all {
+    width: 100%;
+    height: 100%;
+}
+.item-details {
+    overflow: hidden;
+    font-weight: normal;
+}
+.comment-all {
+    float: left;
+    width: 100%;
+    font-size: 0.7em;
+    font-weight: normal;
+}
+.comment-details {
+    overflow: hidden;
+    font-weight: normal;
+}
+.text-box-list-item {
+    height: 30px;
+}
+.text-box {
+    left: 0;
+    width: 100%; 
+    margin-left: 10px;
+}
+.logon-text-box {
+    width: 90%;
+    max-width: 500px;
+}
+.km-android .text-area {
+    width: 100%;
+    background: transparent;
+    color: #A9A9A9;
+    border: 0;
+}
+.km-ios .text-area {
+    font-size: 1.1rem;
+    color: #385487;
+    padding: .4em;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    background: transparent;
+}
+.user-details 
+{
+    float: left;
+    width: 99%;
+    line-height: 1em;
+    background-color: grey;
+    border-radius: 2px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.user-details-time 
+{
+    float: right;
+}
+.user-details-info 
+{
+    float: left;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.user-details-points 
+{
+    margin-top: 5px;
+}
+.user-details-time-string 
+{
+    font-weight: bold;
+}
+.user-details-avatar 
+{
+    width: 32px;
+    height: 32px;
+    float: left;
+    -webkit-box-shadow: 0 1px 1px #333;
+    box-shadow: 0 1px 1px #333;
+    margin: 1px;
+}
+.user-details-user {
+    float: left;
+}
+.user-details-name {
+                
+}
+.user-details-points {
+    font-weight: bold;
+}
+.logonButton 
+{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+.registerButton {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 100px;
+}
+            
+.mainMenuList
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#imageList .item-title
+{
+    float: left;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: .3em 1em 0 .6em;
+    width: 50%;
+}
+.item-info
+{
+    font-size: .7em;
+    line-height: 1em;
+    margin: 10px 0 0 .95em;
+}
+.comment-info {
+    line-height: 1em;
+    margin: 10px 0 0 .95em;
+    max-width: 80%;
+}
+.details-link
+{
+    margin-top: -1em;
+    position: absolute;
+    right: 0.6em;
+    top: 50%;
+}
+.km-listview .km-list
+{
+    margin: 0;
+}
+.delete-tag {
+    background-image: url(images/Delete.png);
+    width: 12px;
+    height: 12px;
+    margin-top: 4px;
+    margin-left: 3px;
+    display: inline-block;
+    vertical-align: top;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+    	.delete-tag {
+    		background: url(images/Delete@2x.png) no-repeat center center;
+            -webkit-background-size: 12px 12px;
+            background-size: 12px 12px;
+		}
+}
+.item-tags 
+{
+    display: block;
+    clear: both;
+}
+.item-votes
+{
+    float: left;
+    display: inline;
+    margin: .5em 1em 0 0;
+}
+.item-count
+{
+    text-align: center;
+    font-weight: bold;
+}
+.comment-votes
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.comment-votes span
+{
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+.up-vote-count
+{
+    margin-bottom: 1em;
+    vertical-align: top;
+}
+.down-vote-count
+{
+    vertical-align: bottom;
+}
+.comment-votes img
+{
+    display: block;
+    float: none;
+    clear: both;
+    height: 25px;
+}
+.item-photo-area {
+}
+.item-photo
+{
+    float: left;
+    width: 4em;
+    height: 4em;
+    margin: .5em 0;
+    -webkit-box-shadow: 0 1px 3px #333;
+    box-shadow: 0 1px 3px #333;
+}
+.km-root .km-listview .km-group-title
+{
+    padding: 0;
+    border-top: 0;
+    box-shadow: none;
+}
+.km-root .km-group-title h2
+{
+    margin: 0;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    background-color: #ef652a;
+    color: #fff;
+    text-shadow: none;
+}
+            
+.km-ios .km-group-title h2, .km-blackberry .km-group-title h2
+{
+    background-image: -moz-linear-gradient(center top , rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.45) 6%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(100, 100, 100, 0));
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0, rgba(255, 255, 255, 0.5)), color-stop(0.06, rgba(255, 255, 255, 0.45)), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(1, rgba(100, 100, 100, 0)));
+}
+            
+#Index .km-ios .km-content
+{
+    background: #bbb;
+}
+            
+.km-android .km-list .album-set a
+{
+    background-color: #277692;
+}
+.km-ios .km-list .album-set a
+{
+    background-color: #bbb;
+}
+            
+.imagePreview
+{
+    display: block;
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+            
+.mapImage
+{
+    width: 100%;
+    height: 400px;
+}
+.ufo {
+    background: url(images/ufo.png) no-repeat center center;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+    	.ufo {
+    		background: url(images/ufo@2x.png) no-repeat center center;
+            -webkit-background-size: 128px 128px;
+            background-size: 128px 128px;
+		}
+}
+#Register h2 
+{
+    font-size: 1.1em;
+    margin: 0;
+    line-height: 1em;
+    display: block;
+}
+.browse-image-title {
+    font-size: 1em;
+}
+.image-tags-details {
+    float: left;
+    width: 100%;
+    line-height: 1.1em;
+}
+.image-tags 
+{
+    float: left;
+    width: 100%;
+    margin-top: 7px;
+}
+.image-details 
+{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    clear: both;
+}
+.browse-image-img 
+{
+    float: left;
+    width: 48px;
+    height: 48px;
+}
+.browse-image-description 
+{
+    position: absolute;
+    margin-left: 100px;
+    overflow: auto;
+}
+.browse-image-link 
+{
+    font-size: 0.7em;
+    font-weight: normal;
+}
+.my-account-image {
+    width: 5em;
+    height: 5em;
+    float: left;
+    margin: 1em;
+    -webkit-box-shadow: 0 1px 3px #333;
+    box-shadow: 0 1px 3px #333;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+.my-account-user-name {
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 1.5em 0 0 1em;
+}
+            
+/* Loader */
+            
+.km-ios #loading .km-content {
+    background: transparent;
+}
+
+#loading .km-content {
+    text-align: center;
+}
+
+#show {
+    margin-top: 100px;
+    font-size: 1.5rem;
+}
+
+/* Example Counter */
+.km-android h1.loaderHeading {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 1em;
+    left: 50%;
+    height: 1em;
+    top: 50%;
+    font-size: 1.2rem;
+    margin: -.65em 0 0 -.5em;
+}
+            
+#Login .km-insetcontent {
+    background-image:url(images/background-pattern.png);
+}
+/* TODO Adjust for Android if needed */
+.km-ios .km-tabstrip .km-button
+{
+    min-width: 2.0rem;
+    font-size: .6em;
+}
+.km-android .km-tabstrip a
+{
+	color: #a8a8a8;
+}
+.km-android .km-tabstrip .km-text
+{
+	text-indent: 0;
+	height: 2.8rem;
+	margin-top: -2rem;
+	padding-top: 1.8rem;
+	text-indent: 0;
+}
+.km-ios .adBannerAndroid {
+    visibility: hidden;
+}
+.km-android .adBannerIos {
+    visibility: hidden;
+}
+            
+#addTagInput {
+    width: 100px;
+    position: relative;
+    display: inline-block;
+    top: 0
+}
+.km-ios #addTagInput {
+    border: 1px solid #000;
+}

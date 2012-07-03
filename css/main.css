@@ -1,0 +1,41 @@
+.brand {
+    float: right !important;
+}
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+}
+.store-link {
+    margin-top: 5px;
+}
+.device-screenshot {
+    height: 300px;
+}
+.hide-overflow {
+    overflow: hidden;
+}
+.sub-nav {
+    margin-bottom: 0px;
+}
+.list-item {
+    padding-bottom: 3px;
+    border-bottom: 1px solid gray;
+}
+.list-header {
+}
+.btn-override {
+    padding: 4px 10px;
+}
+button i {
+    margin-right: 2px !important; 
+}
+.list-view {
+    border: none; 
+    margin-left: 0 !important;
+    background-color: transparent;
+}
+.hero-unit-override {
+    padding: 10px !important;
+    margin-top: 10px;
+}

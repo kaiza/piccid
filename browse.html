@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Piccid</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Kai Gorman">
+        
+        <!-- Le styles -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <style type="text/css">
+            body {  
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            .sidebar-nav {
+                padding: 9px 0;
+            }
+        </style>
+        <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+        <link href="css/kendo.common.min.css" rel="stylesheet" />
+        <link href="css/kendo.default.min.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+        <link href="css/browse.css" rel="stylesheet" />
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/kendo.web.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/browse.js"></script>
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+    
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="brand" href="#">Piccid</a>
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="#">Browse</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="span6 offset3">
+                    Sort By: <input id="dropDownList" />		
+                    <ul id="imageList"></ul>	
+                </div>
+            </div>
+			
+            <hr />
+
+            <footer>
+                <p>&copy; Kai Gorman 2012</p>
+            </footer>
+
+        </div><!--/.fluid-container-->
+        
+        <script type="text/x-kendo-template" id="imageListTemplate">
+                <div class="points dark-shade border-shading image-list-element">
+                    <div class="image-description" style="padding: 5px;">
+                        <img style="float: left; margin-right: 10px" src="#= Uri #" />
+                        <p>
+                            <h1>#= Title #</h1>
+                            <p>#= Description #</p>
+                        </p>
+                    </div>
+                    <div class="points light-shade" style="border-top-left-radius: 0px; border-top-right-radius: 0px;">
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="votes" style="width: 100px;">
+                                        <img src="img/like.png" width="8" height="8" /> #= Votes.UpVotes # <img src="img/dislike.png" width="8" height="8" /> #= Votes.DownVotes #<br>
+							     		#= CreatedString #
+                                    </td>
+                                    <td class="user-info">
+                                        <span>#= User.UserName #</span><br>
+			 				    		<span>#= User.Points #</span>
+                                    </td>
+                                    <td style="width: 32px">
+                                        <img class="avatar" src="#= User.Avatar #&s=32"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tags" colspan="3">
+                                        # for (var i = 0; i < data.Tags.length; i++) { #
+                                            <span class="tag">#= data.Tags[i] #</span>
+                                        # } #
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </script>
+        
+        <script type="text/javascript">
+            var _gauges = _gauges || [];
+            (function () {
+                var t = document.createElement('script');
+                t.type = 'text/javascript';
+                t.async = true;
+                t.id = 'gauges-tracker';
+                t.setAttribute('data-site-id', '4ff2dfb6613f5d4d7b00000e');
+                t.src = '//secure.gaug.es/track.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(t, s);
+            })();
+        </script>
+    </body>
+</html>
